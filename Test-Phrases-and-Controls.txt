@@ -1,0 +1,79 @@
+REMOVAL SOFTWARE — TEST PHRASES & CONTROLS
+=============================================
+
+REQUIREMENT
+Both .ahk programs require AutoHotkey v2.0:
+https://www.autohotkey.com/download/2.0/
+
+TEXT FORMATTING TOOLKIT v5.0
+----------------------------
+Ctrl + Alt + O  = Toggle cleaning ON/OFF.
+Ctrl + Alt + P  = Clean selected text (only while ON).
+
+Rules:
+- Removes: . , ' " : ; [ ] -
+- Keeps: ! ? ( )
+- Changes standalone "an" to "a". (V 5.0 only)
+- Lowercases the first character of each sentence, except standalone "I". (V 5.0 only)
+
+PUNCTUATOR REMOVER v2.0
+-----------------------
+Ctrl + Alt + O   = Toggle remover ON/OFF.
+Ctrl + Shift + P = Clean selected text (only while ON).
+
+Rules:
+- Removes: . , ' " : ; [ ]
+- Keeps: ! ? ( )
+- Keeps hyphens.
+- Does not change "an" or sentence capitalization.
+
+TEST INPUTS
+-----------
+
+1. Basic punctuation
+INPUT: Hello, world. This is a test!
+Toolkit v5.0: hello world this is a test!
+Punctuator v2.0: Hello world This is a test!
+
+2. Quotes and apostrophes
+INPUT: "Don't worry," she said. "It's working."
+Toolkit v5.0: Dont worry she said Its working
+Punctuator v2.0: Dont worry she said Its working
+
+3. Brackets and colon
+INPUT: Please read [this note]: it is important.
+Toolkit v5.0: please read this note it is important
+Punctuator v2.0: Please read this note it is important
+
+4. Hyphens
+INPUT: This is a well-known test; please try it.
+Toolkit v5.0: this is a wellknown test please try it
+Punctuator v2.0: This is a well-known test please try it
+
+5. Question marks and parentheses
+INPUT: Are you ready? (I am!)
+Toolkit v5.0: are you ready? (I am!)
+Punctuator v2.0: Are you ready? (I am!)
+
+6. The standalone word "an"
+INPUT: An example and an answer.
+Toolkit v5.0: a example and a answer
+Punctuator v2.0: An example and an answer
+
+7. Standalone "I"
+INPUT: I think this works. I agree!
+Toolkit v5.0: I think this works I agree!
+Punctuator v2.0: I think this works I agree!
+
+8. Mixed punctuation and hyphen
+INPUT: "An example": [one-two], isn't it?
+Toolkit v5.0: a example one two isnt it?
+Punctuator v2.0: An example one-two isnt it?
+
+9. Selection behavior
+INPUT: Leave this part alone. CLEAN THIS SELECTED PART!
+EXPECTED: Only the highlighted selection is replaced when the cleaning shortcut is pressed.
+
+10. Toggle behavior
+Turn cleaning/removing OFF with Ctrl+Alt+O and try the cleaning shortcut.
+EXPECTED: The selected text is not cleaned; the program displays an OFF message.
