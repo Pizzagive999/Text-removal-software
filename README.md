@@ -54,22 +54,4 @@ https://www.autohotkey.com/download/2.0/
 
 To close a running script, find its green AutoHotkey tray icon near the Windows clock, right-click it, and choose **Exit**. If the icon is hidden, open the small tray overflow menu.
 
-## Publish this website with GitHub Pages
-
-1. Sign in to GitHub and create a new repository. A name such as `removal-software` works.
-2. Set the repository visibility to **Public** if you want anyone to access the page.
-3. Upload `index.html`, this `README.md`, and the `downloads` folder with both `.ahk` files.
-4. Open the repository's **Settings** tab.
-5. Select **Pages** in the sidebar.
-6. Under **Build and deployment**, choose **Deploy from a branch**.
-7. Choose branch `main` and folder `/ (root)`, then click **Save**.
-8. Wait for GitHub Pages to publish. The Pages settings screen will show the website address.
-9. Open that address and test both download links.
-
-## Optional: make standalone EXE versions
-
-The files in this repository are the original `.ahk` scripts, not compiled `.exe` files. If you want standalone EXE downloads later, compile each script on Windows using AutoHotkey's Ahk2Exe compiler. Then add the resulting `.exe` files to `downloads/` and update the download links in `index.html`. An EXE build generally lets users run the program without separately installing AutoHotkey.
-
-## Test phrases
-
-Download `Test-Phrases-and-Controls.txt` from this page for examples you can copy into an app and test with either program.
+As you can see very simple.
