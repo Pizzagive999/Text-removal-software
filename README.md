@@ -3,7 +3,6 @@
 A simple GitHub Pages download site for two Windows text-cleaning tools:
 
 - **Text Formatting Toolkit v5.0**
-- **Punctuator Remover v2.0**
 
 Both are AutoHotkey scripts (`.ahk`). They require **AutoHotkey v2.0**.
 
@@ -25,25 +24,13 @@ Cleans only the text you select.
 
 A small startup guide appears when the script launches.
 
-### Punctuator Remover v2.0
-
-A simpler punctuation-removal tool. It cleans only the text you select.
-
-**Controls**
-- `Ctrl + Alt + O` — turn the remover ON or OFF.
-- `Ctrl + Shift + P` — clean the currently selected text (only while the remover is ON).
-
-**Cleaning rules**
-- Removes periods, commas, apostrophes, quotation marks, colons, semicolons, and square brackets.
-- Keeps `!`, `?`, and parentheses.
-- Does not remove hyphens, change `an` to `a`, or change sentence capitalization.
-
 ## Required: AutoHotkey v2.0
 
 These downloads are `.ahk` scripts, so install **AutoHotkey v2.0** before running either one.
 
 Official download page:
 https://www.autohotkey.com/download/2.0/
+(if its blocked then click the AutoHotkey_2.0.31_setup.exe then click View raw or the download button then follow steps 2 through 6)
 
 1. Open the official AutoHotkey v2 download page.
 2. Download the AutoHotkey v2 installer for Windows.
