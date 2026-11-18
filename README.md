@@ -1,4 +1,5 @@
 # Removal Software
+**WARNNING: THIS IS FOR WINDOWS ONLY!**
 
 A simple GitHub Pages download site for two Windows text-cleaning tools:
 
